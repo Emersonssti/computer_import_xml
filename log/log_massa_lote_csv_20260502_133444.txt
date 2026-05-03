@@ -1,0 +1,8 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: 2
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[ERRO CRÍTICO] Arquivo CSV não encontrado: 2
+[LOG] Início do processamento: 2026-05-02 13:34:44
+[LOG] Fim do processamento: 2026-05-02 13:34:45

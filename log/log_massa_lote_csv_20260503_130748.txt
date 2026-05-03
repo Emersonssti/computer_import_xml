@@ -1,0 +1,52 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: /Users/emersonsantos/Documents/projetos_python_computer/PTU_550/lote.csv
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[LOG] Validando conexão com o banco de dados...
+[LOG] Conexão validada com sucesso! Teste do banco retornou: 1
+[LOG] Colunas detectadas no CSV: ['cod_prestador_ts', 'nome_arquivo']
+[LOG] Coluna prestador: 'cod_prestador_ts' | Coluna arquivo: 'nome_arquivo'
+----------------------------------------------------------------------
+[LOG] Linha 1 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR3_0060852_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR3_0060852_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR3_0060852_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR3_0060852_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR3_0060852_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR3_0060852_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR3_0060852_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 189436 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR3_0060852_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 189436 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 0
+            Mensagem de retorno: None
+      [LOG] Commit efetivado para o arquivo 'NR3_0060852_1.003'.
+======================================================================
+[RESUMO] Arquivos processados com sucesso (exclusões + procedure):
+  - Linha 1 | Arquivo: NR3_0060852_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 0 | Msg: None
+[RESUMO] Falhas durante a execução:
+  - Nenhuma falha registrada.
+[RESUMO] Arquivos que NÃO entraram em nenhum fluxo (sem DELETEs executados):
+  - Linha 1 | Arquivo: NR3_0060852_1.003 | Prestador: 219239
+[RESUMO] Total sucesso: 1 | Total falhas: 0 | Sem fluxo: 1 | Total exclusões geral: 0
+[FIM] Processamento em lote concluído.
+[LOG] Início do processamento: 2026-05-03 13:07:48
+[LOG] Fim do processamento: 2026-05-03 13:09:03

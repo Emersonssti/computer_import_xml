@@ -1,0 +1,11 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: /Users/emersonsantos/Documents/projetos_python_computer/PTU_550/lote.csv
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[LOG] Validando conexão com o banco de dados...
+[ERRO CRÍTICO] Falha na validação da conexão com o banco de dados: ORA-12545: Connect failed because target host or object does not exist
+Help: https://docs.oracle.com/error-help/db/ora-12545/
+[LOG] Processo interrompido pois a conexão falhou.
+[LOG] Início do processamento: 2026-05-02 11:18:49
+[LOG] Fim do processamento: 2026-05-02 11:18:59

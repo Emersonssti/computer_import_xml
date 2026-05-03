@@ -1,0 +1,68 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: /Users/emersonsantos/Documents/projetos_python_computer/PTU_550/lote.csv
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[LOG] Validando conexão com o banco de dados...
+[LOG] Conexão validada com sucesso! Teste do banco retornou: 1
+[LOG] Colunas detectadas no CSV: ['cod_prestador_ts', 'nome_arquivo']
+[LOG] Coluna prestador: 'cod_prestador_ts' | Coluna arquivo: 'nome_arquivo'
+----------------------------------------------------------------------
+[LOG] Linha 1 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR8_0028428.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8_0028428.003'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a pagar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 2600483352 | prestador: 219239 | mes_ano_ref: 2026-02-01 00:00:00 | ultima_data: 2026-05-02 00:00:00
+      [LOG] Executando DELETE em 'itens_pagamento'...
+      [LOG] Deletados 0 registro(s) em 'itens_pagamento'.
+      [LOG] Executando DELETE em 'ctm_itens_contas' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1724 registro(s) em 'ctm_itens_contas'.
+      [LOG] Executando DELETE em 'ctm_contas' (sem data_solicitacao_rev)...
+      [LOG] Deletados 290 registro(s) em 'ctm_contas'.
+      [LOG] Executando DELETE em 'ctm_grd' (cod_lote, sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_grd'.
+      [LOG] Executando DELETE em 'ctm_revisao_prestador'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador'.
+      [LOG] Total de exclusões para 'NR8_0028428.003': 2016.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8_0028428.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 33216 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8_0028428.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 33216 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 0
+            Mensagem de retorno: None
+      [LOG] Commit efetivado para o arquivo 'NR8_0028428.003'.
+======================================================================
+[RESUMO] Arquivos processados com sucesso (exclusões + procedure):
+  - Linha 1 | Arquivo: NR8_0028428.003 | Prestador: 219239 | Exclusões: 2016 | Retorno: 0 | Msg: None
+        * itens_pagamento: 0 registro(s)
+        * ctm_itens_contas: 1724 registro(s)
+        * ctm_contas: 290 registro(s)
+        * ctm_grd: 1 registro(s)
+        * ctm_revisao_prestador: 1 registro(s)
+[RESUMO] Falhas durante a execução:
+  - Nenhuma falha registrada.
+[RESUMO] Arquivos que NÃO entraram em nenhum fluxo (sem DELETEs executados):
+  - Nenhum arquivo nessa condição.
+[RESUMO] Total sucesso: 1 | Total falhas: 0 | Sem fluxo: 0 | Total exclusões geral: 2016
+[FIM] Processamento em lote concluído.
+[LOG] Início do processamento: 2026-05-02 15:22:41
+[LOG] Fim do processamento: 2026-05-02 15:22:54

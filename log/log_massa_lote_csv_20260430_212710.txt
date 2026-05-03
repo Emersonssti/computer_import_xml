@@ -1,0 +1,139 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: /Users/emersonsantos/Documents/projetos_python_computer/PTU_550/lote.csv
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[LOG] Validando conexão com o banco de dados...
+[LOG] Conexão validada com sucesso! Teste do banco retornou: 1
+[LOG] Colunas detectadas no CSV: ['cod_prestador_ts', 'nome_arquivo']
+[LOG] Coluna prestador: 'cod_prestador_ts' | Coluna arquivo: 'nome_arquivo'
+----------------------------------------------------------------------
+[LOG] Linha 1 do CSV: {'cod_prestador_ts': '219289', 'nome_arquivo': 'NR6_7671596.056'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6_7671596.056'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6_7671596.056'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a cobrar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 13119 | prestador: 219289 | mes_ano_ref: 2024-12-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 28 registro(s) em 'ctm_itens_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_grd_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_grd_in_r'.
+      [LOG] Executando DELETE em 'ctm_revisao_prestador_in'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador_in'.
+      [LOG] Total de exclusões para 'NR6_7671596.056': 31.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6_7671596.056'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 9771 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6_7671596.056
+            p_cod_prestador_ts: 219289
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 9771 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 0
+            Mensagem de retorno: Carga realizada sem erros
+      [LOG] Commit efetivado para o arquivo 'NR6_7671596.056'.
+----------------------------------------------------------------------
+[LOG] Linha 2 do CSV: {'cod_prestador_ts': '219238', 'nome_arquivo': 'NR6_9526357.002'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6_9526357.002'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6_9526357.002'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a cobrar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 42307 | prestador: 219238 | mes_ano_ref: 2026-03-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 48 registro(s) em 'ctm_itens_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 3 registro(s) em 'ctm_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_grd_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_grd_in_r'.
+      [LOG] Executando DELETE em 'ctm_revisao_prestador_in'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador_in'.
+      [LOG] Total de exclusões para 'NR6_9526357.002': 53.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6_9526357.002'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 12614 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6_9526357.002
+            p_cod_prestador_ts: 219238
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 12614 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 0
+            Mensagem de retorno: Carga realizada sem erros
+      [LOG] Commit efetivado para o arquivo 'NR6_9526357.002'.
+----------------------------------------------------------------------
+[LOG] Linha 3 do CSV: {'cod_prestador_ts': '219657', 'nome_arquivo': 'NR6_9540636.988'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6_9540636.988'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6_9540636.988'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a cobrar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 7309 | prestador: 219657 | mes_ano_ref: 2026-03-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 60 registro(s) em 'ctm_itens_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_contas_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_contas_in_r'.
+      [LOG] Executando DELETE em 'ctm_grd_in_r' (sem data_solicitacao_rev)...
+      [LOG] Deletados 1 registro(s) em 'ctm_grd_in_r'.
+      [LOG] Executando DELETE em 'ctm_revisao_prestador_in'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador_in'.
+      [LOG] Total de exclusões para 'NR6_9540636.988': 63.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6_9540636.988'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 67387 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6_9540636.988
+            p_cod_prestador_ts: 219657
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 67387 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 0
+            Mensagem de retorno: Carga realizada sem erros
+      [LOG] Commit efetivado para o arquivo 'NR6_9540636.988'.
+======================================================================
+[RESUMO] Arquivos processados com sucesso (exclusões + procedure):
+  - Linha 1 | Arquivo: NR6_7671596.056 | Prestador: 219289 | Exclusões: 31 | Retorno: 0 | Msg: Carga realizada sem erros
+        * ctm_itens_contas_in_r: 28 registro(s)
+        * ctm_contas_in_r: 1 registro(s)
+        * ctm_grd_in_r: 1 registro(s)
+        * ctm_revisao_prestador_in: 1 registro(s)
+  - Linha 2 | Arquivo: NR6_9526357.002 | Prestador: 219238 | Exclusões: 53 | Retorno: 0 | Msg: Carga realizada sem erros
+        * ctm_itens_contas_in_r: 48 registro(s)
+        * ctm_contas_in_r: 3 registro(s)
+        * ctm_grd_in_r: 1 registro(s)
+        * ctm_revisao_prestador_in: 1 registro(s)
+  - Linha 3 | Arquivo: NR6_9540636.988 | Prestador: 219657 | Exclusões: 63 | Retorno: 0 | Msg: Carga realizada sem erros
+        * ctm_itens_contas_in_r: 60 registro(s)
+        * ctm_contas_in_r: 1 registro(s)
+        * ctm_grd_in_r: 1 registro(s)
+        * ctm_revisao_prestador_in: 1 registro(s)
+[RESUMO] Falhas durante a execução:
+  - Nenhuma falha registrada.
+[RESUMO] Arquivos que NÃO entraram em nenhum fluxo (sem DELETEs executados):
+  - Nenhum arquivo nessa condição.
+[RESUMO] Total sucesso: 3 | Total falhas: 0 | Sem fluxo: 0 | Total exclusões geral: 147
+[FIM] Processamento em lote concluído.
+[LOG] Início do processamento: 2026-04-30 21:27:10
+[LOG] Fim do processamento: 2026-04-30 21:27:19

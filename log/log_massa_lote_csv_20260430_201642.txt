@@ -1,0 +1,1769 @@
+[INÍCIO] Modo LOTE (CSV)
+[LOG] Arquivo CSV: /Users/emersonsantos/Documents/projetos_python_computer/PTU_550/lote.csv
+[LOG] Diretório configurado para leitura dos XMLs: /Users/emersonsantos/Documents/arquivos_ptu
+[LOG] EXECUTAR_IMPORT_MASSA = True (procedure será chamada).
+
+[LOG] Validando conexão com o banco de dados...
+[LOG] Conexão validada com sucesso! Teste do banco retornou: 1
+[LOG] Colunas detectadas no CSV: ['cod_prestador_ts', 'nome_arquivo']
+[LOG] Coluna prestador: 'cod_prestador_ts' | Coluna arquivo: 'nome_arquivo'
+----------------------------------------------------------------------
+[LOG] Linha 1 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0028427_2.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0028427_2.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0028427_2.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0028427_2.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0028427_2.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0028427_2.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0028427_2.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 241630 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0028427_2.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 241630 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2600507351| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000280350| V552_id_itemUnico = |2601000300000000000010372616| V552_NR_GUIA_TISS_PRESTADOR = |4121225000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39275037000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0028427_2.003'.
+----------------------------------------------------------------------
+[LOG] Linha 2 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR8_0028428.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8_0028428.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8_0028428.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8_0028428.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 33216 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8_0028428.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 33216 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2600483352| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000280224| V552_id_itemUnico = |2601000300000000000010370583| V552_NR_GUIA_TISS_PRESTADOR = |4142926000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39274046000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8_0028428.003'.
+----------------------------------------------------------------------
+[LOG] Linha 3 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0060845_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0060845_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0060845_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0060845_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0060845_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0060845_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0060845_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 80569 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0060845_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 80569 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2620017463| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |000300070479| V552_id_itemUnico = |2602000300000000000010663723| V552_NR_GUIA_TISS_PRESTADOR = |3_3_2_WEB_59976065_0| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |59976065000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0060845_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 4 do CSV: {'cod_prestador_ts': '219248', 'nome_arquivo': 'NR4_2576394_1.013'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_2576394_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_2576394_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_2576394_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_2576394_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_2576394_1.013' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_2576394_1.013'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 319597 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_2576394_1.013
+            p_cod_prestador_ts: 219248
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 319597 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2598511522| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |001300005892| V552_id_itemUnico = |2601001300000000000012043026| V552_NR_GUIA_TISS_PRESTADOR = |13_220_web_9077497_0| p_cod_prestador_ts: |219248| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |09077497000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_2576394_1.013'.
+----------------------------------------------------------------------
+[LOG] Linha 5 do CSV: {'cod_prestador_ts': '219248', 'nome_arquivo': 'NR4_2580726_1.013'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_2580726_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_2580726_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_2580726_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_2580726_1.013'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_2580726_1.013' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_2580726_1.013'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 224673 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_2580726_1.013
+            p_cod_prestador_ts: 219248
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 224673 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0003- MES_ANO_REF = |01-FEB-26| NR: |2608258284| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |001300232412| V552_id_itemUnico = |2602001300000000000012293872| V552_NR_GUIA_TISS_PRESTADOR = |13_330_web_1574395_1| p_cod_prestador_ts: |219248| V552_TP_TABELA: |00| V552_NR_GUIA_TISS_OPERADORA: |01574395001| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_2580726_1.013'.
+----------------------------------------------------------------------
+[LOG] Linha 6 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8___86326.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8___86326.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8___86326.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8___86326.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8___86326.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8___86326.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8___86326.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 1184284 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8___86326.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 1184284 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2598764564| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |32965| V552_id_itemUnico = |2601003200000000000000348226| V552_NR_GUIA_TISS_PRESTADOR = |15863689| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15863689| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8___86326.032'.
+----------------------------------------------------------------------
+[LOG] Linha 7 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__106391.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__106391.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__106391.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__106391.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__106391.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__106391.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__106391.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 133275 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__106391.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 133275 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0006- MES_ANO_REF = |01-FEB-26| NR: |2602720400| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |198747803| V552_id_itemUnico = |2601003200000000000000669703| V552_NR_GUIA_TISS_PRESTADOR = |757446| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |757446| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8__106391.032'.
+----------------------------------------------------------------------
+[LOG] Linha 8 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__210597_1.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__210597_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__210597_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__210597_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__210597_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__210597_1.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__210597_1.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 144266 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__210597_1.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 144266 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0015- MES_ANO_REF = |01-MAR-26| NR: |2613741492| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |383928| V552_id_itemUnico = |2602003200000000000001278066| V552_NR_GUIA_TISS_PRESTADOR = |1217393| p_cod_prestador_ts: |219267| V552_TP_TABELA: |19| V552_NR_GUIA_TISS_OPERADORA: |1217393| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4__210597_1.032'.
+----------------------------------------------------------------------
+[LOG] Linha 9 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8___45729.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8___45729.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8___45729.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8___45729.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8___45729.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8___45729.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8___45729.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 220751 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8___45729.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 220751 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2597470465| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10465282| V552_id_itemUnico = |2601003200000000000000264254| V552_NR_GUIA_TISS_PRESTADOR = |15033504| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15033504| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8___45729.032'.
+----------------------------------------------------------------------
+[LOG] Linha 10 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__163421.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__163421.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__163421.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__163421.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__163421.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__163421.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__163421.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 71419 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__163421.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 71419 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2608946451| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10500570| V552_id_itemUnico = |2602003200000000000000987647| V552_NR_GUIA_TISS_PRESTADOR = |15945803| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15945803| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8__163421.032'.
+----------------------------------------------------------------------
+[LOG] Linha 11 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR6__209715.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6__209715.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6__209715.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6__209715.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6__209715.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6__209715.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6__209715.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 39600 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6__209715.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 39600 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2612589166| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |12778472| V552_id_itemUnico = |2602003200000000000001175559| V552_NR_GUIA_TISS_PRESTADOR = |1550518| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |1550518| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6__209715.032'.
+----------------------------------------------------------------------
+[LOG] Linha 12 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___63117_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___63117_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___63117_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___63117_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___63117_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4___63117_1.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4___63117_1.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 320718 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4___63117_1.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 320718 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2609772188| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |025420| V552_id_itemUnico = |2601003400000001321126480001| V552_NR_GUIA_TISS_PRESTADOR = |0219227501| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |132112648| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4___63117_1.034'.
+----------------------------------------------------------------------
+[LOG] Linha 13 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR6___19994.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6___19994.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6___19994.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6___19994.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6___19994.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6___19994.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6___19994.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 15939 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6___19994.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 15939 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0009- MES_ANO_REF = |01-FEB-26| NR: |2600091711| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |3314416| V552_id_itemUnico = |2512003400000001313791140009| V552_NR_GUIA_TISS_PRESTADOR = |130313912| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131379114| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6___19994.034'.
+----------------------------------------------------------------------
+[LOG] Linha 14 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___19969_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___19969_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___19969_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___19969_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___19969_1.034'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a pagar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 2600094047 | prestador: 219269 | mes_ano_ref: 2026-02-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas'...
+      [LOG] Deletados 3275 registro(s) em 'ctm_itens_contas'.
+      [LOG] Executando DELETE em 'ctm_contas'...
+      [ERRO] Falha no DELETE da tabela 'ctm_contas': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_grd'...
+      [ERRO] Falha no DELETE da tabela 'ctm_grd': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_revisao_prestador'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador'.
+      [ERRO] Resumo dos DELETEs com falha:
+        * ctm_contas: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+        * ctm_grd: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [ERRO] Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 15 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___57406_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___57406_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___57406_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___57406_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___57406_1.034'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a pagar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 2603397607 | prestador: 219269 | mes_ano_ref: 2026-02-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas'...
+      [LOG] Deletados 1083 registro(s) em 'ctm_itens_contas'.
+      [LOG] Executando DELETE em 'ctm_contas'...
+      [ERRO] Falha no DELETE da tabela 'ctm_contas': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_grd'...
+      [ERRO] Falha no DELETE da tabela 'ctm_grd': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_revisao_prestador'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador'.
+      [ERRO] Resumo dos DELETEs com falha:
+        * ctm_contas: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+        * ctm_grd: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [ERRO] Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 16 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___20022_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___20022_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___20022_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___20022_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___20022_1.034'...
+[LOG] 1 registro(s) encontrado(s) em 'ctm_grd'.
+      [LOG] Fluxo selecionado: 'Intercâmbio a pagar - revisão aberta'.
+      [LOG] Registro encontrado | num_grd: 2600232377 | prestador: 219269 | mes_ano_ref: 2026-02-01 00:00:00 | ultima_data: 2026-04-30 00:00:00
+      [LOG] Executando DELETE em 'ctm_itens_contas'...
+      [LOG] Deletados 2073 registro(s) em 'ctm_itens_contas'.
+      [LOG] Executando DELETE em 'ctm_contas'...
+      [ERRO] Falha no DELETE da tabela 'ctm_contas': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_grd'...
+      [ERRO] Falha no DELETE da tabela 'ctm_grd': ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Executando DELETE em 'ctm_revisao_prestador'...
+      [LOG] Deletados 1 registro(s) em 'ctm_revisao_prestador'.
+      [ERRO] Resumo dos DELETEs com falha:
+        * ctm_contas: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+        * ctm_grd: ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [ERRO] Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 17 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___63481_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___63481_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___63481_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___63481_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___63481_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4___63481_1.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4___63481_1.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 309333 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4___63481_1.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 309333 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-FEB-26| NR: |2607574396| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |8690683| V552_id_itemUnico = |2601003400000001318000210004| V552_NR_GUIA_TISS_PRESTADOR = |23374309| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131800021| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4___63481_1.034'.
+----------------------------------------------------------------------
+[LOG] Linha 18 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR6___63992.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6___63992.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6___63992.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6___63992.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6___63992.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6___63992.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6___63992.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 14175 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6___63992.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 14175 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2609725613| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |17566| V552_id_itemUnico = |2601003400000001319242900001| V552_NR_GUIA_TISS_PRESTADOR = |00087589| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131924290| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6___63992.034'.
+----------------------------------------------------------------------
+[LOG] Linha 19 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR4___63991_1.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4___63991_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4___63991_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4___63991_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4___63991_1.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4___63991_1.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4___63991_1.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 310248 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4___63991_1.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 310248 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2608133802| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |25000153| V552_id_itemUnico = |2601003400000001320464050001| V552_NR_GUIA_TISS_PRESTADOR = |186601928| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |132046405| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4___63991_1.034'.
+----------------------------------------------------------------------
+[LOG] Linha 20 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR6___63993.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6___63993.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6___63993.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6___63993.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6___63993.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6___63993.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6___63993.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 3853 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6___63993.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 3853 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2608545929| VAL_RECONV_SERV : |158| v_val_teste = |158| V552_NR_LOTE_PRESTADOR = |17572| V552_id_itemUnico = |2601003400000001319602440002| V552_NR_GUIA_TISS_PRESTADOR = |00087447| p_cod_prestador_ts: |219269| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |131960244| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6___63993.034'.
+----------------------------------------------------------------------
+[LOG] Linha 21 do CSV: {'cod_prestador_ts': '219403', 'nome_arquivo': 'NR6__449676.175'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6__449676.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6__449676.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6__449676.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6__449676.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6__449676.175' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6__449676.175'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 3978 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6__449676.175
+            p_cod_prestador_ts: 219403
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 3978 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2612889666| VAL_RECONV_SERV : |16,43| v_val_teste = |16.43| V552_NR_LOTE_PRESTADOR = |140937| V552_id_itemUnico = |2511017510002000000006318073| V552_NR_GUIA_TISS_PRESTADOR = |9999712| p_cod_prestador_ts: |219403| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |1443606| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6__449676.175'.
+----------------------------------------------------------------------
+[LOG] Linha 22 do CSV: {'cod_prestador_ts': '219403', 'nome_arquivo': 'NR6__449873.175'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6__449873.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6__449873.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6__449873.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6__449873.175'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6__449873.175' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6__449873.175'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 8936 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6__449873.175
+            p_cod_prestador_ts: 219403
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 8936 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0014- MES_ANO_REF = |01-MAR-26| NR: |2614572334| VAL_RECONV_SERV : |16,43| v_val_teste = |16.43| V552_NR_LOTE_PRESTADOR = |141002| V552_id_itemUnico = |2512017510014000000006318921| V552_NR_GUIA_TISS_PRESTADOR = |10039499| p_cod_prestador_ts: |219403| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |1453371| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6__449873.175'.
+----------------------------------------------------------------------
+[LOG] Linha 23 do CSV: {'cod_prestador_ts': '219432', 'nome_arquivo': 'NR6_2910224.205'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6_2910224.205'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6_2910224.205'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6_2910224.205'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6_2910224.205'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6_2910224.205' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6_2910224.205'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 12425 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6_2910224.205
+            p_cod_prestador_ts: 219432
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 12425 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2619350581| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |316427| V552_id_itemUnico = |2602020500000000000004906540| V552_NR_GUIA_TISS_PRESTADOR = |3645041| p_cod_prestador_ts: |219432| V552_TP_TABELA: |20| V552_NR_GUIA_TISS_OPERADORA: |88220307739| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR6_2910224.205'.
+----------------------------------------------------------------------
+[LOG] Linha 24 do CSV: {'cod_prestador_ts': '219479', 'nome_arquivo': 'NR8__256887.252'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__256887.252'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__256887.252'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__256887.252'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__256887.252'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__256887.252' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__256887.252'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 39855 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__256887.252
+            p_cod_prestador_ts: 219479
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 39855 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2602693822| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |200970815| V552_id_itemUnico = |2601025200000000000200970764| V552_NR_GUIA_TISS_PRESTADOR = |200970763| p_cod_prestador_ts: |219479| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |200970763| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8__256887.252'.
+----------------------------------------------------------------------
+[LOG] Linha 25 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0058722_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0058722_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0058722_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0058722_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0058722_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0058722_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0058722_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 55816 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0058722_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 55816 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2615636543| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284989| V552_id_itemUnico = |2602000300000000000010620226| V552_NR_GUIA_TISS_PRESTADOR = |4174446000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39314025000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0058722_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 26 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0059669_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0059669_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0059669_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0059669_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0059669_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0059669_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0059669_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 247192 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0059669_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 247192 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0014- MES_ANO_REF = |01-MAR-26| NR: |2620075305| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000287288| V552_id_itemUnico = |2602000300000000000010645577| V552_NR_GUIA_TISS_PRESTADOR = |4185658000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |39329123000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0059669_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 27 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR8_0060845.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8_0060845.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8_0060845.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8_0060845.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8_0060845.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8_0060845.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8_0060845.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 80667 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8_0060845.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 80667 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2620017463| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |000300070479| V552_id_itemUnico = |2602000300000000000010663723| V552_NR_GUIA_TISS_PRESTADOR = |3_3_2_WEB_59976065_0| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |59976065000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8_0060845.003'.
+----------------------------------------------------------------------
+[LOG] Linha 28 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0058721_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0058721_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0058721_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0058721_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0058721_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0058721_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0058721_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 179948 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0058721_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 179948 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2615646742| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000285030| V552_id_itemUnico = |2602000300000000000010617228| V552_NR_GUIA_TISS_PRESTADOR = |4174957000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39312917000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0058721_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 29 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0058555_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0058555_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0058555_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0058555_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0058555_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0058555_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0058555_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 13833 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0058555_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 13833 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-MAR-26| NR: |2614305567| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284319| V552_id_itemUnico = |2602000300000000000010517592| V552_NR_GUIA_TISS_PRESTADOR = |291814| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39306568859| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0058555_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 30 do CSV: {'cod_prestador_ts': '219239', 'nome_arquivo': 'NR4_0037862_1.003'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0037862_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0037862_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0037862_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0037862_1.003'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0037862_1.003' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0037862_1.003'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 15875 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0037862_1.003
+            p_cod_prestador_ts: 219239
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 15875 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-MAR-26| NR: |2612895252| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284739| V552_id_itemUnico = |2602000300000000000010518704| V552_NR_GUIA_TISS_PRESTADOR = |291193| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39309872859| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_0037862_1.003'.
+----------------------------------------------------------------------
+[LOG] Linha 31 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__117688_2.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__117688_2.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__117688_2.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__117688_2.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__117688_2.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__117688_2.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__117688_2.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 167527 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__117688_2.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 167527 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2603319996| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10487915| V552_id_itemUnico = |2601003200000000000000786496| V552_NR_GUIA_TISS_PRESTADOR = |15621756| p_cod_prestador_ts: |219267| V552_TP_TABELA: |00| V552_NR_GUIA_TISS_OPERADORA: |15621756| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4__117688_2.032'.
+----------------------------------------------------------------------
+[LOG] Linha 32 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__226619_1.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__226619_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__226619_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__226619_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__226619_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__226619_1.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__226619_1.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 109298 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__226619_1.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 109298 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2614341975| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |262| V552_id_itemUnico = |2602003200000000000001355606| V552_NR_GUIA_TISS_PRESTADOR = |1829004| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |1829004| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4__226619_1.032'.
+----------------------------------------------------------------------
+[LOG] Linha 33 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__227670_1.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__227670_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__227670_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__227670_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__227670_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__227670_1.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__227670_1.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 81574 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__227670_1.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 81574 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-MAR-26| NR: |2615257156| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |12725507| V552_id_itemUnico = |2602003200000000000001487043| V552_NR_GUIA_TISS_PRESTADOR = |505755| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |505755| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4__227670_1.032'.
+----------------------------------------------------------------------
+[LOG] Linha 34 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__106392.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__106392.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__106392.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__106392.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__106392.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__106392.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__106392.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 225525 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__106392.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 225525 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-FEB-26| NR: |2601635206| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |197922983| V552_id_itemUnico = |2601003200000000000000688831| V552_NR_GUIA_TISS_PRESTADOR = |15921308| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15921308| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8__106392.032'.
+----------------------------------------------------------------------
+[LOG] Linha 35 do CSV: {'cod_prestador_ts': '219269', 'nome_arquivo': 'NR8_5827024.034'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8_5827024.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8_5827024.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8_5827024.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8_5827024.034'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8_5827024.034' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8_5827024.034'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 938362 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8_5827024.034
+            p_cod_prestador_ts: 219269
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 938362 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-NOV-24| NR: |2375540863| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |397769| V552_id_itemUnico = |2410003400000000899540070001| V552_NR_GUIA_TISS_PRESTADOR = |01130824085821948837| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |89954007| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR8_5827024.034'.
+----------------------------------------------------------------------
+[LOG] Linha 36 do CSV: {'cod_prestador_ts': '219295', 'nome_arquivo': 'NR4_4732026_1.063'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_4732026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_4732026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_4732026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_4732026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_4732026_1.063' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_4732026_1.063'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 332717 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_4732026_1.063
+            p_cod_prestador_ts: 219295
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 332717 caracteres).
+      [LOG] Procedure executada com sucesso.
+            Código de retorno: 9
+            Mensagem de retorno: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2619273570| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |23715| V552_id_itemUnico = |2602006300000000000058249070| V552_NR_GUIA_TISS_PRESTADOR = |203818717| p_cod_prestador_ts: |219295| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |203818717| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+      [LOG] Commit efetivado para o arquivo 'NR4_4732026_1.063'.
+----------------------------------------------------------------------
+[LOG] Linha 37 do CSV: {'cod_prestador_ts': '219404', 'nome_arquivo': 'NR6___18251.176'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6___18251.176'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6___18251.176'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6___18251.176'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6___18251.176'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6___18251.176' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6___18251.176'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 22400 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6___18251.176
+            p_cod_prestador_ts: 219404
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 22400 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04068: existing state of packages has been discarded
+ORA-04061: existing state of package body "TS.PTU_XML_IMPORTA_A550" has been invalidated
+ORA-04065: not executed, altered or dropped package body "TS.PTU_XML_IMPORTA_A550"
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04068/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 38 do CSV: {'cod_prestador_ts': '219641', 'nome_arquivo': 'NR4_0001273_2.972'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_0001273_2.972'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_0001273_2.972'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_0001273_2.972'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_0001273_2.972'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_0001273_2.972' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_0001273_2.972'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 299569 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_0001273_2.972
+            p_cod_prestador_ts: 219641
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 299569 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 39 do CSV: {'cod_prestador_ts': '219242', 'nome_arquivo': 'NR4_2600717_2.006'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_2600717_2.006'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_2600717_2.006'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_2600717_2.006'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_2600717_2.006'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_2600717_2.006' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_2600717_2.006'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 90876 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_2600717_2.006
+            p_cod_prestador_ts: 219242
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 90876 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 40 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR6__228853.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR6__228853.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR6__228853.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR6__228853.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR6__228853.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR6__228853.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR6__228853.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 70231 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR6__228853.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 70231 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 41 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__170016.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__170016.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__170016.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__170016.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__170016.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__170016.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__170016.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 129108 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__170016.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 129108 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 42 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__257394.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__257394.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__257394.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__257394.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__257394.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__257394.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__257394.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 510521 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__257394.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 510521 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 43 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR8__226619.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR8__226619.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR8__226619.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR8__226619.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR8__226619.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR8__226619.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR8__226619.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 109341 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR8__226619.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 109341 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 44 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__229250_1.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__229250_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__229250_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__229250_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__229250_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__229250_1.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__229250_1.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 92958 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__229250_1.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 92958 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 45 do CSV: {'cod_prestador_ts': '219267', 'nome_arquivo': 'NR4__226621_1.032'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4__226621_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4__226621_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4__226621_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4__226621_1.032'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4__226621_1.032' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4__226621_1.032'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 110153 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4__226621_1.032
+            p_cod_prestador_ts: 219267
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 110153 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+----------------------------------------------------------------------
+[LOG] Linha 46 do CSV: {'cod_prestador_ts': '219295', 'nome_arquivo': 'NR4_6782026_1.063'}
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão fechada' (tabela ctm_grd_cob_r).
+[LOG] Buscando registros em 'ctm_grd_cob_r' para cod_lote = 'NR4_6782026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_cob_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a cobrar - revisão aberta' (tabela ctm_grd_in_r).
+[LOG] Buscando registros em 'ctm_grd_in_r' para cod_lote = 'NR4_6782026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_in_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão fechada' (tabela ctm_grd_pag_r).
+[LOG] Buscando registros em 'ctm_grd_pag_r' para cod_lote = 'NR4_6782026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd_pag_r'.
+      [LOG] Tentando fluxo: 'Intercâmbio a pagar - revisão aberta' (tabela ctm_grd).
+[LOG] Buscando registros em 'ctm_grd' para cod_lote = 'NR4_6782026_1.063'...
+[LOG] 0 registro(s) encontrado(s) em 'ctm_grd'.
+      [AVISO] cod_lote 'NR4_6782026_1.063' NÃO retornou registros em nenhum dos 4 fluxos.
+      [AVISO] Nenhum DELETE foi executado para este arquivo.
+      [LOG] Tentando ler o arquivo XML em: '/Users/emersonsantos/Documents/arquivos_ptu/NR4_6782026_1.063'
+      [LOG] Arquivo XML lido com sucesso (Tamanho: 180903 caracteres).
+      [LOG] Executando a procedure 'PTU_XML_IMPORTA_A550.PTU_IMPORTA_550'...
+      [LOG] Parâmetros de entrada enviados para a procedure:
+            p_nom_arquivo: NR4_6782026_1.063
+            p_cod_prestador_ts: 219295
+            p_mes_ano_ref: None
+            p_num_grd: None
+            p_mes_ano_ref_vinc: None
+            p_dt_prev_pgto: None
+            p_tipo: None
+            p_arquivo (XML): conteúdo omitido no log (tamanho 180903 caracteres).
+      [ERRO] Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+      [LOG] Rollback realizado.
+======================================================================
+[RESUMO] Arquivos processados com sucesso (exclusões + procedure):
+  - Linha 1 | Arquivo: NR4_0028427_2.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2600507351| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000280350| V552_id_itemUnico = |2601000300000000000010372616| V552_NR_GUIA_TISS_PRESTADOR = |4121225000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39275037000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 2 | Arquivo: NR8_0028428.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2600483352| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000280224| V552_id_itemUnico = |2601000300000000000010370583| V552_NR_GUIA_TISS_PRESTADOR = |4142926000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39274046000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 3 | Arquivo: NR4_0060845_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2620017463| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |000300070479| V552_id_itemUnico = |2602000300000000000010663723| V552_NR_GUIA_TISS_PRESTADOR = |3_3_2_WEB_59976065_0| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |59976065000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 4 | Arquivo: NR4_2576394_1.013 | Prestador: 219248 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2598511522| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |001300005892| V552_id_itemUnico = |2601001300000000000012043026| V552_NR_GUIA_TISS_PRESTADOR = |13_220_web_9077497_0| p_cod_prestador_ts: |219248| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |09077497000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 5 | Arquivo: NR4_2580726_1.013 | Prestador: 219248 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0003- MES_ANO_REF = |01-FEB-26| NR: |2608258284| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |001300232412| V552_id_itemUnico = |2602001300000000000012293872| V552_NR_GUIA_TISS_PRESTADOR = |13_330_web_1574395_1| p_cod_prestador_ts: |219248| V552_TP_TABELA: |00| V552_NR_GUIA_TISS_OPERADORA: |01574395001| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 6 | Arquivo: NR8___86326.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2598764564| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |32965| V552_id_itemUnico = |2601003200000000000000348226| V552_NR_GUIA_TISS_PRESTADOR = |15863689| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15863689| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 7 | Arquivo: NR8__106391.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0006- MES_ANO_REF = |01-FEB-26| NR: |2602720400| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |198747803| V552_id_itemUnico = |2601003200000000000000669703| V552_NR_GUIA_TISS_PRESTADOR = |757446| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |757446| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 8 | Arquivo: NR4__210597_1.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0015- MES_ANO_REF = |01-MAR-26| NR: |2613741492| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |383928| V552_id_itemUnico = |2602003200000000000001278066| V552_NR_GUIA_TISS_PRESTADOR = |1217393| p_cod_prestador_ts: |219267| V552_TP_TABELA: |19| V552_NR_GUIA_TISS_OPERADORA: |1217393| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 9 | Arquivo: NR8___45729.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2597470465| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10465282| V552_id_itemUnico = |2601003200000000000000264254| V552_NR_GUIA_TISS_PRESTADOR = |15033504| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15033504| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 10 | Arquivo: NR8__163421.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2608946451| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10500570| V552_id_itemUnico = |2602003200000000000000987647| V552_NR_GUIA_TISS_PRESTADOR = |15945803| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15945803| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 11 | Arquivo: NR6__209715.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2612589166| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |12778472| V552_id_itemUnico = |2602003200000000000001175559| V552_NR_GUIA_TISS_PRESTADOR = |1550518| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |1550518| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 12 | Arquivo: NR4___63117_1.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2609772188| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |025420| V552_id_itemUnico = |2601003400000001321126480001| V552_NR_GUIA_TISS_PRESTADOR = |0219227501| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |132112648| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 13 | Arquivo: NR6___19994.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0009- MES_ANO_REF = |01-FEB-26| NR: |2600091711| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |3314416| V552_id_itemUnico = |2512003400000001313791140009| V552_NR_GUIA_TISS_PRESTADOR = |130313912| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131379114| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 17 | Arquivo: NR4___63481_1.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-FEB-26| NR: |2607574396| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |8690683| V552_id_itemUnico = |2601003400000001318000210004| V552_NR_GUIA_TISS_PRESTADOR = |23374309| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131800021| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 18 | Arquivo: NR6___63992.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2609725613| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |17566| V552_id_itemUnico = |2601003400000001319242900001| V552_NR_GUIA_TISS_PRESTADOR = |00087589| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |131924290| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 19 | Arquivo: NR4___63991_1.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2608133802| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |25000153| V552_id_itemUnico = |2601003400000001320464050001| V552_NR_GUIA_TISS_PRESTADOR = |186601928| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |132046405| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 20 | Arquivo: NR6___63993.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2608545929| VAL_RECONV_SERV : |158| v_val_teste = |158| V552_NR_LOTE_PRESTADOR = |17572| V552_id_itemUnico = |2601003400000001319602440002| V552_NR_GUIA_TISS_PRESTADOR = |00087447| p_cod_prestador_ts: |219269| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |131960244| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 21 | Arquivo: NR6__449676.175 | Prestador: 219403 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-FEB-26| NR: |2612889666| VAL_RECONV_SERV : |16,43| v_val_teste = |16.43| V552_NR_LOTE_PRESTADOR = |140937| V552_id_itemUnico = |2511017510002000000006318073| V552_NR_GUIA_TISS_PRESTADOR = |9999712| p_cod_prestador_ts: |219403| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |1443606| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 22 | Arquivo: NR6__449873.175 | Prestador: 219403 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0014- MES_ANO_REF = |01-MAR-26| NR: |2614572334| VAL_RECONV_SERV : |16,43| v_val_teste = |16.43| V552_NR_LOTE_PRESTADOR = |141002| V552_id_itemUnico = |2512017510014000000006318921| V552_NR_GUIA_TISS_PRESTADOR = |10039499| p_cod_prestador_ts: |219403| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |1453371| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 23 | Arquivo: NR6_2910224.205 | Prestador: 219432 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2619350581| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |316427| V552_id_itemUnico = |2602020500000000000004906540| V552_NR_GUIA_TISS_PRESTADOR = |3645041| p_cod_prestador_ts: |219432| V552_TP_TABELA: |20| V552_NR_GUIA_TISS_OPERADORA: |88220307739| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 24 | Arquivo: NR8__256887.252 | Prestador: 219479 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2602693822| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |200970815| V552_id_itemUnico = |2601025200000000000200970764| V552_NR_GUIA_TISS_PRESTADOR = |200970763| p_cod_prestador_ts: |219479| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |200970763| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 25 | Arquivo: NR4_0058722_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2615636543| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284989| V552_id_itemUnico = |2602000300000000000010620226| V552_NR_GUIA_TISS_PRESTADOR = |4174446000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39314025000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 26 | Arquivo: NR4_0059669_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0014- MES_ANO_REF = |01-MAR-26| NR: |2620075305| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000287288| V552_id_itemUnico = |2602000300000000000010645577| V552_NR_GUIA_TISS_PRESTADOR = |4185658000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |18| V552_NR_GUIA_TISS_OPERADORA: |39329123000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 27 | Arquivo: NR8_0060845.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2620017463| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |000300070479| V552_id_itemUnico = |2602000300000000000010663723| V552_NR_GUIA_TISS_PRESTADOR = |3_3_2_WEB_59976065_0| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |59976065000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 28 | Arquivo: NR4_0058721_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2615646742| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000285030| V552_id_itemUnico = |2602000300000000000010617228| V552_NR_GUIA_TISS_PRESTADOR = |4174957000000| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39312917000| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 29 | Arquivo: NR4_0058555_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-MAR-26| NR: |2614305567| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284319| V552_id_itemUnico = |2602000300000000000010517592| V552_NR_GUIA_TISS_PRESTADOR = |291814| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39306568859| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 30 | Arquivo: NR4_0037862_1.003 | Prestador: 219239 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-MAR-26| NR: |2612895252| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |00000284739| V552_id_itemUnico = |2602000300000000000010518704| V552_NR_GUIA_TISS_PRESTADOR = |291193| p_cod_prestador_ts: |219239| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |39309872859| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 31 | Arquivo: NR4__117688_2.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-FEB-26| NR: |2603319996| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |10487915| V552_id_itemUnico = |2601003200000000000000786496| V552_NR_GUIA_TISS_PRESTADOR = |15621756| p_cod_prestador_ts: |219267| V552_TP_TABELA: |00| V552_NR_GUIA_TISS_OPERADORA: |15621756| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 32 | Arquivo: NR4__226619_1.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2614341975| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |262| V552_id_itemUnico = |2602003200000000000001355606| V552_NR_GUIA_TISS_PRESTADOR = |1829004| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |1829004| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 33 | Arquivo: NR4__227670_1.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0002- MES_ANO_REF = |01-MAR-26| NR: |2615257156| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |12725507| V552_id_itemUnico = |2602003200000000000001487043| V552_NR_GUIA_TISS_PRESTADOR = |505755| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |505755| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 34 | Arquivo: NR8__106392.032 | Prestador: 219267 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0004- MES_ANO_REF = |01-FEB-26| NR: |2601635206| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |197922983| V552_id_itemUnico = |2601003200000000000000688831| V552_NR_GUIA_TISS_PRESTADOR = |15921308| p_cod_prestador_ts: |219267| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |15921308| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 35 | Arquivo: NR8_5827024.034 | Prestador: 219269 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-NOV-24| NR: |2375540863| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |397769| V552_id_itemUnico = |2410003400000000899540070001| V552_NR_GUIA_TISS_PRESTADOR = |01130824085821948837| p_cod_prestador_ts: |219269| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |89954007| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+  - Linha 36 | Arquivo: NR4_4732026_1.063 | Prestador: 219295 | Exclusões: 0 | Retorno: 9 | Msg: POSICAO (others) 996 -  Item (NR_SEQ_A500) |0001- MES_ANO_REF = |01-MAR-26| NR: |2619273570| VAL_RECONV_SERV : |0| v_val_teste = |0| V552_NR_LOTE_PRESTADOR = |23715| V552_id_itemUnico = |2602006300000000000058249070| V552_NR_GUIA_TISS_PRESTADOR = |203818717| p_cod_prestador_ts: |219295| V552_TP_TABELA: |22| V552_NR_GUIA_TISS_OPERADORA: |203818717| ---- ERRO: (others) ORA-01422: exact fetch returns more than requested number of rows
+ORA-01403: no data found
+ORA-01403: no data found
+[RESUMO] Falhas durante a execução:
+  - Linha 14 | Arquivo: NR4___19969_1.034 | Motivo: Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+  - Linha 15 | Arquivo: NR4___57406_1.034 | Motivo: Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+  - Linha 16 | Arquivo: NR4___20022_1.034 | Motivo: Erro ao executar DELETEs: Falha em 2 DELETE(s): ctm_contas -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/; ctm_grd -> ORA-00904: "A"."DATA_SOLICITACAO_REV": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+  - Linha 37 | Arquivo: NR6___18251.176 | Motivo: Erro ao executar procedure: ORA-04068: existing state of packages has been discarded
+ORA-04061: existing state of package body "TS.PTU_XML_IMPORTA_A550" has been invalidated
+ORA-04065: not executed, altered or dropped package body "TS.PTU_XML_IMPORTA_A550"
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04068/
+  - Linha 38 | Arquivo: NR4_0001273_2.972 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 39 | Arquivo: NR4_2600717_2.006 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 40 | Arquivo: NR6__228853.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 41 | Arquivo: NR8__170016.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 42 | Arquivo: NR8__257394.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 43 | Arquivo: NR8__226619.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 44 | Arquivo: NR4__229250_1.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 45 | Arquivo: NR4__226621_1.032 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+  - Linha 46 | Arquivo: NR4_6782026_1.063 | Motivo: Erro ao executar procedure: ORA-04063: package body "TS.PTU_XML_IMPORTA_A550" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "TS.PTU_XML_IMPORTA_A550"
+ORA-06512: at line 1
+Help: https://docs.oracle.com/error-help/db/ora-04063/
+[RESUMO] Arquivos que NÃO entraram em nenhum fluxo (sem DELETEs executados):
+  - Linha 1 | Arquivo: NR4_0028427_2.003 | Prestador: 219239
+  - Linha 2 | Arquivo: NR8_0028428.003 | Prestador: 219239
+  - Linha 3 | Arquivo: NR4_0060845_1.003 | Prestador: 219239
+  - Linha 4 | Arquivo: NR4_2576394_1.013 | Prestador: 219248
+  - Linha 5 | Arquivo: NR4_2580726_1.013 | Prestador: 219248
+  - Linha 6 | Arquivo: NR8___86326.032 | Prestador: 219267
+  - Linha 7 | Arquivo: NR8__106391.032 | Prestador: 219267
+  - Linha 8 | Arquivo: NR4__210597_1.032 | Prestador: 219267
+  - Linha 9 | Arquivo: NR8___45729.032 | Prestador: 219267
+  - Linha 10 | Arquivo: NR8__163421.032 | Prestador: 219267
+  - Linha 11 | Arquivo: NR6__209715.032 | Prestador: 219267
+  - Linha 12 | Arquivo: NR4___63117_1.034 | Prestador: 219269
+  - Linha 13 | Arquivo: NR6___19994.034 | Prestador: 219269
+  - Linha 17 | Arquivo: NR4___63481_1.034 | Prestador: 219269
+  - Linha 18 | Arquivo: NR6___63992.034 | Prestador: 219269
+  - Linha 19 | Arquivo: NR4___63991_1.034 | Prestador: 219269
+  - Linha 20 | Arquivo: NR6___63993.034 | Prestador: 219269
+  - Linha 21 | Arquivo: NR6__449676.175 | Prestador: 219403
+  - Linha 22 | Arquivo: NR6__449873.175 | Prestador: 219403
+  - Linha 23 | Arquivo: NR6_2910224.205 | Prestador: 219432
+  - Linha 24 | Arquivo: NR8__256887.252 | Prestador: 219479
+  - Linha 25 | Arquivo: NR4_0058722_1.003 | Prestador: 219239
+  - Linha 26 | Arquivo: NR4_0059669_1.003 | Prestador: 219239
+  - Linha 27 | Arquivo: NR8_0060845.003 | Prestador: 219239
+  - Linha 28 | Arquivo: NR4_0058721_1.003 | Prestador: 219239
+  - Linha 29 | Arquivo: NR4_0058555_1.003 | Prestador: 219239
+  - Linha 30 | Arquivo: NR4_0037862_1.003 | Prestador: 219239
+  - Linha 31 | Arquivo: NR4__117688_2.032 | Prestador: 219267
+  - Linha 32 | Arquivo: NR4__226619_1.032 | Prestador: 219267
+  - Linha 33 | Arquivo: NR4__227670_1.032 | Prestador: 219267
+  - Linha 34 | Arquivo: NR8__106392.032 | Prestador: 219267
+  - Linha 35 | Arquivo: NR8_5827024.034 | Prestador: 219269
+  - Linha 36 | Arquivo: NR4_4732026_1.063 | Prestador: 219295
+  - Linha 37 | Arquivo: NR6___18251.176 | Prestador: 219404
+  - Linha 38 | Arquivo: NR4_0001273_2.972 | Prestador: 219641
+  - Linha 39 | Arquivo: NR4_2600717_2.006 | Prestador: 219242
+  - Linha 40 | Arquivo: NR6__228853.032 | Prestador: 219267
+  - Linha 41 | Arquivo: NR8__170016.032 | Prestador: 219267
+  - Linha 42 | Arquivo: NR8__257394.032 | Prestador: 219267
+  - Linha 43 | Arquivo: NR8__226619.032 | Prestador: 219267
+  - Linha 44 | Arquivo: NR4__229250_1.032 | Prestador: 219267
+  - Linha 45 | Arquivo: NR4__226621_1.032 | Prestador: 219267
+  - Linha 46 | Arquivo: NR4_6782026_1.063 | Prestador: 219295
+[RESUMO] Total sucesso: 33 | Total falhas: 13 | Sem fluxo: 43 | Total exclusões geral: 0
+[FIM] Processamento em lote concluído.
+[LOG] Início do processamento: 2026-04-30 20:16:42
+[LOG] Fim do processamento: 2026-04-30 20:33:27
