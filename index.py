@@ -25,13 +25,22 @@ AMBIENTES = {
     },
 }
 
+
+def get_base_dir():
+    """Diretório base para CSV / pasta log / Instant Client / XMLs. Script ou executável PyInstaller."""
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(sys.executable)
+    return os.path.dirname(os.path.abspath(__file__))
+
+
 # -------------------------------------------------------------------------
 # ETAPA 1: CONFIGURAÇÕES (sobrescritas via setters / GUI)
 # -------------------------------------------------------------------------
 def _instant_client_default():
+    base = get_base_dir()
     if platform.system() == "Windows":
-        return r"C:\oracle\instantclient_21_13"
-    return "/Users/emersonsantos/Documents/instantclient-basic-macos.arm64-23.26.1.0.0"
+        return os.path.join(base, "instantclient-basic-windows")
+    return os.path.join(base, "instantclient-basic-macos.arm64-23.26.1.0.0")
 
 
 CAMINHO_INSTANT_CLIENT = _instant_client_default()
@@ -40,7 +49,7 @@ USER = AMBIENTES["OPER1"]["user"]
 PASSWORD = AMBIENTES["OPER1"]["password"]
 
 # Diretório onde os arquivos XML estão armazenados.
-DIRETORIO_LOCAL = '/Users/emersonsantos/Documents/arquivos_ptu'
+DIRETORIO_LOCAL = os.path.join(get_base_dir(), "arquivos_ptu")
 
 # Nome da procedure alvo, reutilizada em todos os modos.
 NOME_PROCEDURE = "PTU_XML_IMPORTA_A550.PTU_IMPORTA_550"
@@ -62,13 +71,6 @@ ORACLE_CLIENT_INICIADO = False
 # Obs.: thin mode falha com DPY-3015 quando o usuário Oracle usa password verifier antigo (10G).
 # Default = False para garantir compatibilidade com bancos legados.
 USAR_THIN_MODE = False
-
-
-def get_base_dir():
-    """Diretório base para CSV / pasta log. Funciona tanto em script quanto em executável PyInstaller."""
-    if getattr(sys, "frozen", False):
-        return os.path.dirname(sys.executable)
-    return os.path.dirname(os.path.abspath(__file__))
 
 
 def set_ambiente(nome_ambiente):
